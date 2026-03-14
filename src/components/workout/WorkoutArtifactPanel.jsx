@@ -119,7 +119,7 @@ const WorkoutArtifactPanel = () => {
     const baseWorkout = {
       ...activeArtifact.payload,
       name: nameDraft.trim() || activeArtifact.payload?.name || 'Workout Plan',
-      createdBy: 'Max AI Coach',
+      createdBy: 'Tom AI Coach',
     };
 
     const savedWorkout = createWorkout(baseWorkout);

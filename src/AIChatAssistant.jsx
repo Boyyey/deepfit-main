@@ -262,7 +262,7 @@ const NoProfileScreen = ({ onNavigateToProfile }) => {
           transition={{ delay: 0.6 }}
           className="text-2xl font-bold text-gray-800 mb-4"
         >
-          Welcome to Max
+          Welcome to Tom
         </motion.h1>
 
         <motion.p

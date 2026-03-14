@@ -19,18 +19,18 @@ const MobileAppInstallBanner = () => {
     // Only show banner if on mobile and not already installed
     if (isMobile && !isStandalone) {
       // Check for returning users (more aggressive promotion)
-      const isReturningUser = localStorage.getItem('max_coach_visited');
-      const lastPrompt = localStorage.getItem('max_coach_last_prompt');
+      const isReturningUser = localStorage.getItem('tom_coach_visited');
+      const lastPrompt = localStorage.getItem('tom_coach_last_prompt');
       const currentDate = new Date().toISOString().split('T')[0];
       
       // Set as visited
-      localStorage.setItem('max_coach_visited', 'true');
+      localStorage.setItem('tom_coach_visited', 'true');
       
       // Wait before showing the banner (shorter time for returning users)
       const timer = setTimeout(() => {
         setShowBanner(true);
         setInstallSource('auto');
-        localStorage.setItem('max_coach_last_prompt', currentDate);
+        localStorage.setItem('tom_coach_last_prompt', currentDate);
       }, isReturningUser && lastPrompt !== currentDate ? 1500 : 3000);
       
       return () => clearTimeout(timer);
@@ -74,9 +74,9 @@ const MobileAppInstallBanner = () => {
       };
       
       // Save install attempt data locally
-      const attempts = JSON.parse(localStorage.getItem('max_coach_install_attempts') || '[]');
+      const attempts = JSON.parse(localStorage.getItem('tom_coach_install_attempts') || '[]');
       attempts.push(installAction);
-      localStorage.setItem('max_coach_install_attempts', JSON.stringify(attempts));
+      localStorage.setItem('tom_coach_install_attempts', JSON.stringify(attempts));
       
       if (outcome === 'accepted') {
         setShowBanner(false);
@@ -87,7 +87,7 @@ const MobileAppInstallBanner = () => {
       // If iOS, show a hint how to add to home screen
       const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
       if (isIOS) {
-        alert("To install Max AI Coach on your iOS device: tap the share icon at the bottom of your screen, then 'Add to Home Screen'. You'll get full-screen experience and offline access to your workout data.");
+        alert("To install Tom AI Coach on your iOS device: tap the share icon at the bottom of your screen, then 'Add to Home Screen'. You'll get full-screen experience and offline access to your workout data.");
       }
     }
   };
@@ -112,7 +112,7 @@ const MobileAppInstallBanner = () => {
           </div>
           
           <div className="flex-1">
-            <h3 id="install-banner-title" className="font-semibold text-gray-800">Install Max AI Coach</h3>
+            <h3 id="install-banner-title" className="font-semibold text-gray-800">Install Tom AI Coach</h3>
             <p className="text-sm text-gray-600">Add to home screen for offline access, workout tracking, and progress analytics</p>
           </div>
           
@@ -128,7 +128,7 @@ const MobileAppInstallBanner = () => {
             <button 
               onClick={handleInstallClick}
               className="bg-[#4A90E2] text-white px-4 py-2 rounded-lg flex items-center gap-1"
-              aria-label="Install Max AI Coach as a home screen app"
+              aria-label="Install Tom AI Coach as a home screen app"
             >
               Install <ChevronRight className="w-4 h-4" aria-hidden="true" />
             </button>

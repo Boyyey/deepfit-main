@@ -22,7 +22,7 @@ const WorkoutPreview = ({ workoutData, onAction }) => {
   const handleSave = () => {
     const newWorkoutPlan = createWorkout({
       ...workoutData,
-      createdBy: 'Max AI Coach',
+      createdBy: 'Tom AI Coach',
     });
     setIsSaved(true);
     handleClose(newWorkoutPlan);

@@ -22,8 +22,8 @@ const PageTitle = () => {
     const path = location.pathname;
     
     const baseMeta = {
-      title: "Max AI Coach - Personal AI Fitness Trainer | Jordan Montée (AlikelDev)",
-      description: "Transform your fitness journey with Max AI Coach. Get personalized workouts, form analysis, and expert guidance tailored to your fitness level.",
+      title: "Tom AI Coach - Personal AI Fitness Trainer | AmirHosseinRasti",
+      description: "Transform your fitness journey with Tom AI Coach. Get personalized workouts, form analysis, and expert guidance tailored to your fitness level.",
       keywords: "AI fitness coach, personal trainer, workout tracker, strength training"
     };
     
@@ -31,35 +31,35 @@ const PageTitle = () => {
       case '/':
         return {
           ...baseMeta,
-          title: "Max AI Coach - AI-Powered Fitness Training | Alikearn Studio",
+          title: "Tom AI Coach - AI-Powered Fitness Training",
           description: "Your personal AI fitness trainer for customized workouts, form analysis, and progress tracking. Transform your fitness journey today.",
           keywords: "AI fitness coach, personal trainer, workout planner, fitness app"
         };
       case '/chat':
         return {
           ...baseMeta,
-          title: "Chat with Max - AI Fitness Advice | Max AI Coach",
-          description: "Get real-time fitness advice, form guidance, and personalized workout help from Max, your AI fitness coach.",
+          title: "Chat with Tom - AI Fitness Advice | Tom AI Coach",
+          description: "Get real-time fitness advice, form guidance, and personalized workout help from Tom, your AI fitness coach.",
           keywords: "AI fitness advice, workout guidance, exercise form, fitness help"
         };
       case '/workout':
         return {
           ...baseMeta,
-          title: "Workout Tracker & Planner | Max AI Coach",
+          title: "Workout Tracker & Planner | Tom AI Coach",
           description: "Create, track, and optimize your workout routines with intelligent exercise tracking and form guidance.",
           keywords: "workout tracker, fitness planner, strength training log, exercise tracker"
         };
       case '/profile':
         return {
           ...baseMeta,
-          title: "Athlete Profile Setup | Max AI Coach",
+          title: "Athlete Profile Setup | Tom AI Coach",
           description: "Customize your fitness profile for personalized workout recommendations based on your goals and equipment.",
           keywords: "fitness profile, athlete settings, workout personalization"
         };
       case '/progress':
         return {
           ...baseMeta,
-          title: "Fitness Progress Analytics | Max AI Coach",
+          title: "Fitness Progress Analytics | Tom AI Coach",
           description: "Track your fitness journey with detailed analytics, progress charts, and body composition tracking.",
           keywords: "fitness analytics, workout progress, strength gains, body composition"
         };
@@ -83,7 +83,7 @@ const PageTitle = () => {
       return JSON.stringify({
         "@context": "https://schema.org",
         "@type": "WebApplication",
-        "name": "Max AI Coach",
+        "name": "Tom AI Coach",
         "applicationCategory": "HealthApplication",
         "operatingSystem": "Web",
         "offers": {
@@ -212,21 +212,17 @@ const App = () => {
                 <div className="max-w-4xl mx-auto">
                   <div className="flex flex-col md:flex-row justify-between items-center mb-4">
                     <p className="text-sm text-gray-700 mb-4 md:mb-0">
-                      <strong>Max AI Coach</strong> - Your personal AI fitness trainer developed by 
-                      <a href="https://github.com/AliKelDev" className="text-[#4A90E2] hover:underline ml-1">Jordan Montée (AlikelDev)</a>
+                      <strong>Tom AI Coach</strong> - Your personal AI fitness trainer developed by
+                      <a href="https://github.com/boyyey" className="text-[#4A90E2] hover:underline ml-1">AmirHosseinRasti</a>
                     </p>
                     <div className="flex space-x-4">
-                      <a href="https://deep-chef.netlify.app/" className="text-sm text-[#4A90E2] hover:underline">DeepChef</a>
-                      <a href="https://pixelle3-alikearn.com/" className="text-sm text-[#4A90E2] hover:underline">Pixelle3</a>
-                      <a href="https://linkforge-alikeldev.netlify.app/" className="text-sm text-[#4A90E2] hover:underline">LinkForge</a>
                     </div>
                   </div>
                   <p className="text-sm text-gray-600 text-center md:text-left">
-                    Max AI Coach offers personalized workout plans, strength training guidance, progress tracking and analytics, 
+                    Tom AI Coach offers personalized workout plans, strength training guidance, progress tracking and analytics, 
                     form analysis, and body composition monitoring for fitness enthusiasts of all levels.
                   </p>
                   <p className="text-xs text-gray-500 mt-4 text-center">
-                    © 2023-2025 Alikearn Studio. All rights reserved.
                   </p>
                 </div>
               </div>
