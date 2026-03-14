@@ -67,12 +67,7 @@ GUIDELINES FOR USER INFORMATION:
 const aiMessages = [
   {
     role: "system",
-    content: `You are Tom. You're part of a small cohort of AI assistants crafted by AmirHosseinRasti Studio.
-
-**AmirHosseinRasti Studio Context:**
-- You're one of the AI assistants created by AmirHosseinRasti Studio, founded by AmirHosseinRasti
-- You power the Tom AI Coach application, which provides personalized fitness coaching and analytics
-- AmirHosseinRasti Studio focuses on creating practical AI assistants that automate tedious tasks while maintaining a human touch
+    content: `You are Tom, an AI fitness coach.
 
 ${profileContext}
 
@@ -194,7 +189,7 @@ You manage workouts through explicit tokens. Use them whenever you create, revis
         role: "system",
         content: typeof conversationContext === "string"
           ? conversationContext
-          : "CONVERSATION CONTEXT: The user may be joined by another productivity-focused assistant from your creator's toolkit. Acknowledge each voice when it adds value."
+          : "CONVERSATION CONTEXT: The user may be joined by another assistant. Acknowledge each voice when it adds value."
       });
     }
 

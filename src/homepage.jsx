@@ -220,17 +220,11 @@ const Homepage = () => {
           </div>
         </section>
 
-        {/* By AlikelDev Section */}
-        <section aria-labelledby="creator-heading" className="mt-24 max-w-6xl mx-auto text-center">
-          <h2 id="creator-heading" className="sr-only">About the Creator</h2>
+        {/* About Section */}
+        <section aria-labelledby="about-heading" className="mt-24 max-w-6xl mx-auto text-center">
+          <h2 id="about-heading" className="sr-only">About</h2>
           <p className="text-lg text-gray-700">
-            Developed by <a href="https://github.com/AmirHosseinRasti" className="text-[#4A90E2] font-semibold hover:underline">AmirHosseinRasti</a>
-          </p>
-          <p className="text-sm text-gray-600 mt-2">
-            Part of the AmirHosseinRasti Studio AI assistant family alongside 
-            <a href="https://deep-chef.netlify.app/" className="text-[#4A90E2] ml-1 hover:underline">DeepChef</a>, 
-            <a href="https://pixelle3-alikearn.com/" className="text-[#4A90E2] ml-1 hover:underline">Pixelle3</a>, and
-            <a href="https://linkforge-alikeldev.netlify.app/" className="text-[#4A90E2] ml-1 hover:underline">LinkForge</a>
+            Tom AI Coach - Your Personal Fitness Assistant
           </p>
         </section>
       </section>

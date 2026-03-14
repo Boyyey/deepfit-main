@@ -961,7 +961,7 @@ const ProfileManager = () => {
                     className="flex items-center gap-2 px-6 py-3 bg-[#4A90E2] text-white rounded-lg hover:bg-[#357ABD] transition-colors"
                   >
                     <MessageSquare className="w-5 h-5" />
-                    Chat with Max
+                    Chat with Tom
                   </button>
                 </div>
               )}
@@ -1482,7 +1482,7 @@ const ProfileManager = () => {
                 <div className="space-y-6">
                   <h2 className="text-xl font-semibold text-gray-800">Available Equipment</h2>
                   <p className="text-gray-600">
-                    Select the equipment you have access to for your workouts. This helps Max create appropriate workout plans.
+                    Select the equipment you have access to for your workouts. This helps Tom create appropriate workout plans.
                   </p>
     
                   <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">

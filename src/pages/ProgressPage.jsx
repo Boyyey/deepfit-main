@@ -95,8 +95,8 @@ const ProgressPage = () => {
     arms: false
   });
 
-  // Function to share progress data with Max
-  const handleShareWithMax = () => {
+  // Function to share progress data with Tom
+  const handleShareWithTom = () => {
     // Collect data based on active tab
     let progressData = {
       type: 'progress',
@@ -190,7 +190,7 @@ const ProgressPage = () => {
 
     // Calculate personal records
     const records = [];
-    const exerciseMaxes = {};
+    const exerciseTom = {};
 
     history.forEach(workout => {
       workout.exercises.forEach(exercise => {
@@ -198,8 +198,8 @@ const ProgressPage = () => {
           if (set.completed) {
             const weight = parseFloat(set.actualWeight);
             if (!isNaN(weight) && weight > 0) {
-              if (!exerciseMaxes[exercise.name] || weight > exerciseMaxes[exercise.name]) {
-                exerciseMaxes[exercise.name] = weight;
+              if (!exerciseTom[exercise.name] || weight > exerciseTom[exercise.name]) {
+                exerciseTom[exercise.name] = weight;
                 records.push({
                   exercise: exercise.name,
                   weight,
@@ -279,7 +279,7 @@ const ProgressPage = () => {
       workout.exercises.forEach(exercise => {
         if (exercise.name === selectedExercise) {
           // Find the heaviest completed set
-          let maxWeight = 0;
+          let tomWeight = 0;
           let volume = 0;
           
           exercise.sets.forEach(set => {
@@ -288,17 +288,17 @@ const ProgressPage = () => {
               const reps = parseInt(set.actualReps);
               
               if (!isNaN(weight) && !isNaN(reps)) {
-                if (weight > maxWeight) maxWeight = weight;
+                if (weight > tomWeight) tomWeight = weight;
                 volume += weight * reps;
               }
             }
           });
           
-          if (maxWeight > 0) {
+          if (tomWeight > 0) {
             progressData.push({
               date: new Date(workout.startTime).toLocaleDateString(),
               timestamp: new Date(workout.startTime).getTime(),
-              weight: maxWeight,
+              weight: tomWeight,
               volume: volume
             });
           }

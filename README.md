@@ -62,4 +62,4 @@ You'll need a valid `GEMINI_API_KEY` in the environment for the Netlify function
 - When saving a workout to the library, the validation controls collapse to avoid duplicate submissions.
 
 ## License
-This project is provided as-is by AmirHosseinRasti. See the repository history for individual contributions.
+This project is provided as-is for personal and educational use.

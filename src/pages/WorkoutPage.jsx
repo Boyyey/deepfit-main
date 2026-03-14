@@ -180,7 +180,7 @@ const WorkoutPage = () => {
     return `${hrs.toString().padStart(2, '0')}:${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
   };
   
-  // Format workout data to a readable string for Max
+  // Format workout data to a readable string for Tom
   const formatWorkoutForAI = (workout) => {
     if (!workout) return "";
     
@@ -528,7 +528,7 @@ const WorkoutPage = () => {
     }
   };
 
-  const handleChatWithMax = () => {
+  const handleChatWithTom = () => {
     // Prepare data to pass to the chat screen
     const chatData = {
       message: quickMessage.trim(),
@@ -569,7 +569,7 @@ const WorkoutPage = () => {
           </div>
           <h1 className="text-2xl font-bold text-gray-800 mb-4">Create Your Profile</h1>
           <p className="text-gray-600 mb-6">
-            Before you can start training, you need to create an athlete profile. This helps Max personalize your workouts.
+            Before you can start training, you need to create an athlete profile. This helps Tom personalize your workouts.
           </p>
           <button
             onClick={() => navigate('/profile')}
@@ -690,7 +690,7 @@ const WorkoutPage = () => {
         setSelectedWorkoutForChat={setSelectedWorkoutForChat}
         quickMessage={quickMessage}
         setQuickMessage={setQuickMessage}
-        handleChatWithMax={handleChatWithMax}
+        handleChatWithTom={handleChatWithTom}
         activeWorkout={activeWorkout}
         workoutHistory={workoutHistory}
         formatTime={formatTime}

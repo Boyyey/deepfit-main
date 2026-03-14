@@ -12,7 +12,7 @@ const QuickChatModal = ({
   setSelectedWorkoutForChat, 
   quickMessage, 
   setQuickMessage, 
-  handleChatWithMax, 
+  handleChatWithTom, 
   activeWorkout, 
   workoutHistory, 
   formatTime, 
@@ -36,7 +36,7 @@ const QuickChatModal = ({
             <div className="p-6 border-b border-gray-200">
               <div className="flex items-center gap-3 mb-4">
                 <MessageSquare className="w-6 h-6 text-[#4A90E2]" />
-                <h3 className="text-xl font-semibold text-gray-800">Ask Max</h3>
+                <h3 className="text-xl font-semibold text-gray-800">Ask Tom</h3>
               </div>
               
               {/* Workout Selection */}
@@ -180,7 +180,7 @@ const QuickChatModal = ({
               <div className="mt-4 text-sm text-gray-600">
                 <span className="flex items-center gap-2">
                   <Info className="w-4 h-4" />
-                  Quick questions Max can help with:
+                  Quick questions Tom can help with:
                 </span>
                 <ul className="ml-6 mt-2 list-disc space-y-1">
                   <li>How can I improve my {selectedWorkoutForChat ? selectedWorkoutForChat.name : "workout"} routine?</li>
@@ -204,11 +204,11 @@ const QuickChatModal = ({
                 Cancel
               </button>
               <button
-                onClick={handleChatWithMax}
+                onClick={handleChatWithTom}
                 className="px-6 py-3 bg-[#4A90E2] text-white rounded-lg hover:bg-[#357ABD] transition-colors"
                 disabled={!quickMessage.trim() && !selectedWorkoutForChat}
               >
-                Chat with Max
+                Chat with Tom
               </button>
             </div>
           </motion.div>
