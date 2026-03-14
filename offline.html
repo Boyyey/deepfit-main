@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max AI Coach - Currently Offline</title>
+    <meta name="description" content="Max AI Coach is currently offline. Your workout data is safe and will sync when you're back online.">
+    
+    <!-- Favicon links -->
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+    
+    <style>
+        :root {
+            --primary-color: #4A90E2;
+            --primary-dark: #357ABD;
+            --background: #E6F3FF;
+            --text-color: #333333;
+            --card-bg: #FFFFFF;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(to bottom, var(--background), #D1E9FF);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            padding: 40px 24px;
+            margin-bottom: 24px;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+        }
+        
+        .logo svg {
+            width: 40px;
+            height: 40px;
+            fill: white;
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-color);
+        }
+        
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #666;
+            margin-bottom: 24px;
+        }
+        
+        .button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .button:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        .info-box {
+            background-color: #E8F4FF;
+            border-radius: 8px;
+            padding: 16px;
+            margin-top: 24px;
+            text-align: left;
+        }
+        
+        .info-box h3 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+            color: var(--primary-color);
+        }
+        
+        .info-box ul {
+            list-style-type: none;
+            margin-left: 8px;
+        }
+        
+        .info-box li {
+            padding: 4px 0;
+            font-size: 0.9rem;
+            color: #555;
+        }
+        
+        .info-box li::before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        footer {
+            margin-top: 24px;
+            font-size: 0.8rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="logo" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path>
+                    <line x1="16" y1="8" x2="2" y2="22"></line>
+                    <line x1="17.5" y1="15" x2="9" y2="15"></line>
+                </svg>
+            </div>
+            
+            <h1>You're Currently Offline</h1>
+            <p>Max AI Coach is unable to connect to the internet. Don't worry - your workout data is safely stored on your device and will sync automatically when you're back online.</p>
+            
+            <button class="button" onclick="window.location.reload()">Try Again</button>
+            
+            <div class="info-box">
+                <h3>Features available offline:</h3>
+                <ul>
+                    <li>View saved workouts</li>
+                    <li>Track ongoing workout session</li>
+                    <li>Access your recent progress data</li>
+                    <li>View your athlete profile</li>
+                </ul>
+            </div>
+        </div>
+        
+        <footer>
+            Max AI Coach by Alikearn Studio | Jordan Montée (AlikelDev)
+        </footer>
+    </div>
+    
+    <script>
+        // Check connection status when the page loads
+        window.addEventListener('online', () => {
+            window.location.reload();
+        });
+        
+        // Add to homescreen functionality could be added here
+        // This is a simple offline page, so we're keeping it minimal
+    </script>
+</body>
+</html>

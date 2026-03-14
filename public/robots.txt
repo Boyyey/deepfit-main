@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /netlify/
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /functions/ #Prevents indexing of serverless functions if exposed
+# Removed "Disallow: /" to allow crawling of the pages
+
+Sitemap: https://tom-ai-coach.com/sitemap.xml

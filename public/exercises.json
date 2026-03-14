@@ -1,0 +1,51 @@
+{
+  "Chest": [
+    { "name": "Bench Press", "equipment": ["Barbell", "Bench"], "muscleGroups": ["Chest", "Triceps", "Shoulders"], "difficulty": "Intermediate" },
+    { "name": "Push-ups", "equipment": ["Bodyweight"], "muscleGroups": ["Chest", "Triceps", "Shoulders"], "difficulty": "Beginner" },
+    { "name": "Dumbbell Flyes", "equipment": ["Dumbbells", "Bench"], "muscleGroups": ["Chest"], "difficulty": "Intermediate" },
+    { "name": "Chest Dips", "equipment": ["Dip Bars"], "muscleGroups": ["Chest", "Triceps"], "difficulty": "Intermediate" },
+    { "name": "Cable Crossovers", "equipment": ["Cable Machine"], "muscleGroups": ["Chest"], "difficulty": "Intermediate" }
+  ],
+  "Back": [
+    { "name": "Pull-ups", "equipment": ["Pull-up Bar"], "muscleGroups": ["Back", "Biceps"], "difficulty": "Intermediate" },
+    { "name": "Deadlift", "equipment": ["Barbell"], "muscleGroups": ["Back", "Hamstrings", "Glutes"], "difficulty": "Advanced" },
+    { "name": "Bent Over Rows", "equipment": ["Barbell", "Dumbbells"], "muscleGroups": ["Back", "Biceps"], "difficulty": "Intermediate" },
+    { "name": "Lat Pulldowns", "equipment": ["Cable Machine"], "muscleGroups": ["Back", "Biceps"], "difficulty": "Beginner" },
+    { "name": "T-Bar Rows", "equipment": ["T-Bar"], "muscleGroups": ["Back"], "difficulty": "Intermediate" }
+  ],
+  "Legs": [
+    { "name": "Squats", "equipment": ["Barbell", "Squat Rack"], "muscleGroups": ["Quadriceps", "Glutes", "Hamstrings"], "difficulty": "Intermediate" },
+    { "name": "Lunges", "equipment": ["Bodyweight", "Dumbbells"], "muscleGroups": ["Quadriceps", "Glutes", "Hamstrings"], "difficulty": "Beginner" },
+    { "name": "Leg Press", "equipment": ["Leg Press Machine"], "muscleGroups": ["Quadriceps", "Glutes", "Hamstrings"], "difficulty": "Beginner" },
+    { "name": "Romanian Deadlift", "equipment": ["Barbell", "Dumbbells"], "muscleGroups": ["Hamstrings", "Glutes", "Lower Back"], "difficulty": "Intermediate" },
+    { "name": "Calf Raises", "equipment": ["Machine", "Bodyweight"], "muscleGroups": ["Calves"], "difficulty": "Beginner" }
+  ],
+  "Shoulders": [
+    { "name": "Overhead Press", "equipment": ["Barbell", "Dumbbells"], "muscleGroups": ["Shoulders", "Triceps"], "difficulty": "Intermediate" },
+    { "name": "Lateral Raises", "equipment": ["Dumbbells"], "muscleGroups": ["Shoulders"], "difficulty": "Beginner" },
+    { "name": "Face Pulls", "equipment": ["Cable Machine"], "muscleGroups": ["Rear Deltoids", "Upper Back"], "difficulty": "Intermediate" },
+    { "name": "Arnold Press", "equipment": ["Dumbbells"], "muscleGroups": ["Shoulders"], "difficulty": "Intermediate" },
+    { "name": "Upright Rows", "equipment": ["Barbell", "Dumbbells"], "muscleGroups": ["Shoulders", "Traps"], "difficulty": "Intermediate" }
+  ],
+  "Arms": [
+    { "name": "Bicep Curls", "equipment": ["Dumbbells", "Barbell"], "muscleGroups": ["Biceps"], "difficulty": "Beginner" },
+    { "name": "Tricep Dips", "equipment": ["Bodyweight", "Dip Bars"], "muscleGroups": ["Triceps"], "difficulty": "Intermediate" },
+    { "name": "Skull Crushers", "equipment": ["Barbell", "Dumbbells"], "muscleGroups": ["Triceps"], "difficulty": "Intermediate" },
+    { "name": "Hammer Curls", "equipment": ["Dumbbells"], "muscleGroups": ["Biceps", "Forearms"], "difficulty": "Beginner" },
+    { "name": "Cable Pushdowns", "equipment": ["Cable Machine"], "muscleGroups": ["Triceps"], "difficulty": "Beginner" }
+  ],
+  "Core": [
+    { "name": "Plank", "equipment": ["Bodyweight"], "muscleGroups": ["Abs", "Core"], "difficulty": "Beginner" },
+    { "name": "Russian Twists", "equipment": ["Bodyweight", "Medicine Ball"], "muscleGroups": ["Abs", "Obliques"], "difficulty": "Beginner" },
+    { "name": "Hanging Leg Raises", "equipment": ["Pull-up Bar"], "muscleGroups": ["Abs", "Hip Flexors"], "difficulty": "Intermediate" },
+    { "name": "Cable Crunches", "equipment": ["Cable Machine"], "muscleGroups": ["Abs"], "difficulty": "Intermediate" },
+    { "name": "Ab Wheel Rollouts", "equipment": ["Ab Wheel"], "muscleGroups": ["Abs", "Core"], "difficulty": "Advanced" }
+  ],
+  "Cardio": [
+    { "name": "Running", "equipment": ["None", "Treadmill"], "muscleGroups": ["Full Body"], "difficulty": "Beginner to Advanced" },
+    { "name": "Cycling", "equipment": ["Bicycle", "Exercise Bike"], "muscleGroups": ["Legs", "Core"], "difficulty": "Beginner to Advanced" },
+    { "name": "Jump Rope", "equipment": ["Jump Rope"], "muscleGroups": ["Full Body"], "difficulty": "Beginner to Advanced" },
+    { "name": "High Knees", "equipment": ["Bodyweight"], "muscleGroups": ["Legs", "Core"], "difficulty": "Beginner" },
+    { "name": "Burpees", "equipment": ["Bodyweight"], "muscleGroups": ["Full Body"], "difficulty": "Intermediate" }
+  ]
+}
